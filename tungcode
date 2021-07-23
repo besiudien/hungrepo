@@ -1,0 +1,337 @@
+-- Instances:
+ 
+local GameHub = Instance.new("ScreenGui")
+local Credits_Main_Open = Instance.new("Frame")
+local Credits_Open = Instance.new("TextButton")
+local Hub_Main = Instance.new("Frame")
+local Hub_LT2_Open = Instance.new("TextButton")
+local Hub_Jailbreak = Instance.new("TextButton")
+local Hub_Decor1 = Instance.new("Frame")
+local Hub_Title = Instance.new("TextLabel")
+local Hub_Close = Instance.new("TextButton")
+local Hub_Decor2 = Instance.new("Frame")
+local Hub_Credit = Instance.new("TextLabel")
+local Hub_LT2 = Instance.new("Frame")
+local LT2_Decor1 = Instance.new("Frame")
+local LT2_Title = Instance.new("TextLabel")
+local LT2_Decor2 = Instance.new("Frame")
+local LT2_Close = Instance.new("TextButton")
+local Duper_Gui = Instance.new("TextButton")
+local DerpHub_Gui = Instance.new("TextButton")
+local Salty_Gui = Instance.new("TextButton")
+local Dirt_Gui = Instance.new("TextButton")
+local Credits_Main = Instance.new("Frame")
+local Credits_3 = Instance.new("TextLabel")
+local Credits_Decor1 = Instance.new("Frame")
+local Credits_Title = Instance.new("TextLabel")
+local Credits_Close = Instance.new("TextButton")
+local Credits_Decor2 = Instance.new("Frame")
+local Goto_Hub = Instance.new("TextButton")
+local Credits_1 = Instance.new("TextLabel")
+local Credits_2 = Instance.new("TextLabel")
+ 
+--Properties:
+ 
+GameHub.Name = "Game Hub"
+GameHub.Parent = game.CoreGui
+GameHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+Credits_Main_Open.Name = "Credits_Main_Open"
+Credits_Main_Open.Parent = GameHub
+Credits_Main_Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_Main_Open.Position = UDim2.new(0.429163218, 0, 0.939042091, 0)
+Credits_Main_Open.Size = UDim2.new(0, 156, 0, 42)
+ 
+Credits_Open.Name = "Credits_Open"
+Credits_Open.Parent = Credits_Main_Open
+Credits_Open.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Credits_Open.Position = UDim2.new(-0.000323951244, 0, -0.0133388638, 0)
+Credits_Open.Size = UDim2.new(0, 156, 0, 42)
+Credits_Open.Font = Enum.Font.SciFi
+Credits_Open.Text = "Open"
+Credits_Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits_Open.TextSize = 30.000
+Credits_Open.MouseButton1Down:connect(function()
+Credits_Main.Visible = true
+Credits_Main_Open.Visible = false
+end)
+ 
+Hub_Main.Name = "Hub_Main"
+Hub_Main.Parent = GameHub
+Hub_Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub_Main.Position = UDim2.new(0.410936207, 0, 0.420899868, 0)
+Hub_Main.Size = UDim2.new(0, 214, 0, 108)
+Hub_Main.Draggable = true
+ 
+Hub_LT2_Open.Name = "Hub_LT2_Open"
+Hub_LT2_Open.Parent = Hub_Main
+Hub_LT2_Open.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Hub_LT2_Open.Position = UDim2.new(0.12093024, 0, -0.00433334708, 0)
+Hub_LT2_Open.Size = UDim2.new(0, 161, 0, 50)
+Hub_LT2_Open.Font = Enum.Font.SourceSans
+Hub_LT2_Open.Text = "Lumber Tycoon 2 GUI's"
+Hub_LT2_Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hub_LT2_Open.TextSize = 14.000
+Hub_LT2_Open.MouseButton1Down:connect(function()
+Hub_LT2.Visible = true
+Hub_Main.Visible = false
+end)
+ 
+Hub_Jailbreak.Name = "Hub_Jailbreak"
+Hub_Jailbreak.Parent = Hub_Main
+Hub_Jailbreak.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Hub_Jailbreak.Position = UDim2.new(0.125581399, 0, 0.520909131, 0)
+Hub_Jailbreak.Size = UDim2.new(0, 161, 0, 50)
+Hub_Jailbreak.Font = Enum.Font.SourceSans
+Hub_Jailbreak.Text = "Jailbreak GUI"
+Hub_Jailbreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hub_Jailbreak.TextSize = 14.000
+Hub_Jailbreak.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/qW2t2MtP", true))()
+end)
+ 
+Hub_Decor1.Name = "Hub_Decor1"
+Hub_Decor1.Parent = Hub_Main
+Hub_Decor1.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Hub_Decor1.Position = UDim2.new(0.00132175256, 0, -0.309523702, 0)
+Hub_Decor1.Size = UDim2.new(0, 214, 0, 32)
+ 
+Hub_Title.Name = "Hub_Title"
+Hub_Title.Parent = Hub_Decor1
+Hub_Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub_Title.BackgroundTransparency = 1.000
+Hub_Title.Position = UDim2.new(-0.00335122924, 0, -0.00231480598, 0)
+Hub_Title.Size = UDim2.new(0, 213, 0, 32)
+Hub_Title.Font = Enum.Font.SciFi
+Hub_Title.Text = "Game Hub 2.0"
+Hub_Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hub_Title.TextSize = 25.000
+Hub_Title.Draggable = true
+ 
+Hub_Close.Name = "Hub_Close"
+Hub_Close.Parent = Hub_Decor1
+Hub_Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Hub_Close.Position = UDim2.new(0.841121495, 0, -0.00231480598, 0)
+Hub_Close.Size = UDim2.new(0, 34, 0, 32)
+Hub_Close.Font = Enum.Font.SciFi
+Hub_Close.Text = "Close"
+Hub_Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hub_Close.TextSize = 14.000
+Hub_Close.MouseButton1Down:connect(function()
+Credits_Main_Open.Visible = true
+Hub_Main.Visible = false
+end)
+ 
+Hub_Decor2.Name = "Hub_Decor2"
+Hub_Decor2.Parent = Hub_Main
+Hub_Decor2.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Hub_Decor2.Position = UDim2.new(0, 0, 0.99603188, 0)
+Hub_Decor2.Size = UDim2.new(0, 214, 0, 32)
+ 
+Hub_Credit.Name = "Hub_Credit"
+Hub_Credit.Parent = Hub_Decor2
+Hub_Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub_Credit.BackgroundTransparency = 1.000
+Hub_Credit.Position = UDim2.new(0.00599456485, 0, -0.00925922394, 0)
+Hub_Credit.Size = UDim2.new(0, 213, 0, 32)
+Hub_Credit.Font = Enum.Font.SciFi
+Hub_Credit.Text = "*Scripts Not Made By Me*"
+Hub_Credit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hub_Credit.TextSize = 15.000
+ 
+Hub_LT2.Name = "Hub_LT2"
+Hub_LT2.Parent = Hub_Main
+Hub_LT2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Hub_LT2.Position = UDim2.new(0.214000002, 0, -0.375, 0)
+Hub_LT2.Size = UDim2.new(0, 190, 0, 180)
+Hub_LT2.Visible = false
+Hub_LT2.Draggable = true
+ 
+LT2_Decor1.Name = "LT2_Decor1"
+LT2_Decor1.Parent = Hub_LT2
+LT2_Decor1.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+LT2_Decor1.Position = UDim2.new(0, 0, -0.12138731, 0)
+LT2_Decor1.Size = UDim2.new(0, 190, 0, 21)
+ 
+LT2_Title.Name = "LT2_Title"
+LT2_Title.Parent = LT2_Decor1
+LT2_Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LT2_Title.BackgroundTransparency = 1.000
+LT2_Title.Position = UDim2.new(0, 0, -7.26609017e-07, 0)
+LT2_Title.Size = UDim2.new(0, 190, 0, 22)
+LT2_Title.Font = Enum.Font.SciFi
+LT2_Title.Text = "Lumber Tycoon 2 Guis"
+LT2_Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+LT2_Title.TextSize = 14.000
+LT2_Title.Draggable = true
+ 
+LT2_Decor2.Name = "LT2_Decor2"
+LT2_Decor2.Parent = Hub_LT2
+LT2_Decor2.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+LT2_Decor2.Position = UDim2.new(0, 0, 0.998554826, 0)
+LT2_Decor2.Size = UDim2.new(0, 190, 0, 21)
+ 
+LT2_Close.Name = "LT2_Close"
+LT2_Close.Parent = LT2_Decor2
+LT2_Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LT2_Close.BackgroundTransparency = 1.000
+LT2_Close.Size = UDim2.new(0, 190, 0, 21)
+LT2_Close.Font = Enum.Font.SciFi
+LT2_Close.Text = "Close"
+LT2_Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+LT2_Close.TextSize = 14.000
+LT2_Close.MouseButton1Down:connect(function()
+Hub_Main.Visible = true
+Hub_LT2.Visible = false
+end)
+ 
+Duper_Gui.Name = "Duper_Gui"
+Duper_Gui.Parent = Hub_LT2
+Duper_Gui.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Duper_Gui.Position = UDim2.new(0.100000001, 0, 0.243632078, 0)
+Duper_Gui.Size = UDim2.new(0, 151, 0, 45)
+Duper_Gui.Font = Enum.Font.SciFi
+Duper_Gui.Text = "Duper Gui"
+Duper_Gui.TextColor3 = Color3.fromRGB(0, 0, 0)
+Duper_Gui.TextSize = 14.000
+Duper_Gui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/XwLSKeAc", true))()
+end)
+ 
+DerpHub_Gui.Name = "DerpHub_Gui"
+DerpHub_Gui.Parent = Hub_LT2
+DerpHub_Gui.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+DerpHub_Gui.Position = UDim2.new(0.100000001, 0, 0.493391514, 0)
+DerpHub_Gui.Size = UDim2.new(0, 151, 0, 45)
+DerpHub_Gui.Font = Enum.Font.SciFi
+DerpHub_Gui.Text = "Derp Hub Gui"
+DerpHub_Gui.TextColor3 = Color3.fromRGB(0, 0, 0)
+DerpHub_Gui.TextSize = 14.000
+DerpHub_Gui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/JyrzzdqQ"))()
+end)
+ 
+Salty_Gui.Name = "Salty_Gui"
+Salty_Gui.Parent = Hub_LT2
+Salty_Gui.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Salty_Gui.Position = UDim2.new(0.100000001, 0, 0.742578983, 0)
+Salty_Gui.Size = UDim2.new(0, 151, 0, 45)
+Salty_Gui.Font = Enum.Font.SciFi
+Salty_Gui.Text = "Salty Gui"
+Salty_Gui.TextColor3 = Color3.fromRGB(0, 0, 0)
+Salty_Gui.TextSize = 14.000
+Salty_Gui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/fDyfex1E", true))()
+end)
+ 
+Dirt_Gui.Name = "Dirt_Gui"
+Dirt_Gui.Parent = Hub_LT2
+Dirt_Gui.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Dirt_Gui.Position = UDim2.new(0.100000001, 0, 0, 0)
+Dirt_Gui.Size = UDim2.new(0, 151, 0, 45)
+Dirt_Gui.Font = Enum.Font.SciFi
+Dirt_Gui.Text = "Dirt Gui"
+Dirt_Gui.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dirt_Gui.TextSize = 14.000
+Dirt_Gui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/GpC7XR4P", true))()
+end)
+ 
+Credits_Main.Name = "Credits_Main"
+Credits_Main.Parent = GameHub
+Credits_Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_Main.Position = UDim2.new(0.410936207, 0, 0.439767778, 0)
+Credits_Main.Size = UDim2.new(0, 214, 0, 97)
+Credits_Main.Visible = false
+Credits_Main.Draggable = true
+ 
+Credits_3.Name = "Credits_3"
+Credits_3.Parent = Credits_Main
+Credits_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_3.BackgroundTransparency = 1.000
+Credits_3.Position = UDim2.new(0.00132166967, 0, 0.663269401, 0)
+Credits_3.Size = UDim2.new(0, 213, 0, 32)
+Credits_3.Font = Enum.Font.SciFi
+Credits_3.Text = "*Scripts Not Made By Me*"
+Credits_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits_3.TextSize = 15.000
+Credits_3.Draggable = true
+ 
+Credits_Decor1.Name = "Credits_Decor1"
+Credits_Decor1.Parent = Credits_Main
+Credits_Decor1.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Credits_Decor1.Position = UDim2.new(0.00132175256, 0, -0.340451539, 0)
+Credits_Decor1.Size = UDim2.new(0, 214, 0, 32)
+ 
+Credits_Title.Name = "Credits_Title"
+Credits_Title.Parent = Credits_Decor1
+Credits_Title.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Credits_Title.BackgroundTransparency = 1.000
+Credits_Title.Position = UDim2.new(-0.00335122366, 0, -0.0264194012, 0)
+Credits_Title.Size = UDim2.new(0, 213, 0, 32)
+Credits_Title.Font = Enum.Font.SciFi
+Credits_Title.Text = "Credits"
+Credits_Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits_Title.TextSize = 15.000
+Credits_Title.Draggable = true
+ 
+Credits_Close.Name = "Credits_Close"
+Credits_Close.Parent = Credits_Decor1
+Credits_Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Credits_Close.BorderColor3 = Color3.fromRGB(0, 255, 255)
+Credits_Close.Position = UDim2.new(0.827327132, 0, -0.00524999946, 0)
+Credits_Close.Size = UDim2.new(0, 36, 0, 32)
+Credits_Close.Font = Enum.Font.SciFi
+Credits_Close.Text = "X"
+Credits_Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits_Close.TextSize = 14.000
+Credits_Close.MouseButton1Down:connect(function()
+Credits_Main_Open.Visible = true
+Credits_Main.Visible = false
+end)
+ 
+Credits_Decor2.Name = "Credits_Decor2"
+Credits_Decor2.Parent = Credits_Main
+Credits_Decor2.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Credits_Decor2.Position = UDim2.new(0, 0, 0.99603188, 0)
+Credits_Decor2.Size = UDim2.new(0, 214, 0, 32)
+ 
+Goto_Hub.Name = "Goto_Hub"
+Goto_Hub.Parent = Credits_Decor2
+Goto_Hub.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Goto_Hub.BackgroundTransparency = 1.000
+Goto_Hub.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Goto_Hub.Position = UDim2.new(0.0327102803, 0, 0, 0)
+Goto_Hub.Size = UDim2.new(0, 200, 0, 32)
+Goto_Hub.Font = Enum.Font.SciFi
+Goto_Hub.Text = "Go To Hub"
+Goto_Hub.TextColor3 = Color3.fromRGB(0, 0, 0)
+Goto_Hub.TextSize = 14.000
+Goto_Hub.MouseButton1Down:connect(function()
+Hub_Main.Visible = true
+Credits_Main.Visible = false
+end)
+ 
+Credits_1.Name = "Credits_1"
+Credits_1.Parent = Credits_Main
+Credits_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_1.BackgroundTransparency = 1.000
+Credits_1.Position = UDim2.new(-0.00335122924, 0, -0.00902250409, 0)
+Credits_1.Size = UDim2.new(0, 213, 0, 32)
+Credits_1.Font = Enum.Font.SciFi
+Credits_1.Text = "YouTube: Hard Luck Games"
+Credits_1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits_1.TextSize = 15.000
+Credits_1.Draggable = true
+ 
+Credits_2.Name = "Credits_2"
+Credits_2.Parent = Credits_Main
+Credits_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.BackgroundTransparency = 1.000
+Credits_2.Position = UDim2.new(-0.00335122924, 0, 0.329379082, 0)
+Credits_2.Size = UDim2.new(0, 213, 0, 32)
+Credits_2.Font = Enum.Font.SciFi
+Credits_2.Text = "Roblox: KDI43zxd"
+Credits_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits_2.TextSize = 15.000
+Credits_2.Draggable = true
